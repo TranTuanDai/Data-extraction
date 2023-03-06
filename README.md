@@ -35,6 +35,7 @@ Bước 4 :
        
               df_chidinh.drop_duplicates().to_excel('D:/FRT/5.Python/Template_boc_text/ketqua_vs_v3.xlsx', index=False)
               Để đường dẫn muốn lưu file
+       Kết qủa thu được là  : những sản phẩm tương ứng với các bênh,triệu chứng có trong bảng mô tả tác dụng phụ của sản phẩm đó 
 
     
 
