@@ -21,7 +21,8 @@ Bước 2 :
        df_disease = pd.read_excel('D:/FRT/5.Python/tac_dung_phu/Frequent_less_rare/Side_Effect.xlsx')
        
 Bước 3 :
-      Nếu dữ liệu mô tả tác dụng phụ  có các thẻ dư html thì comment đoạn code này ở Funtion : def html_to_text_clean(filename):
+      Nếu dữ liệu mô tả tác dụng phụ  có các thẻ dư html thì comment đoạn code này ở Funtion :
+           def html_to_text_clean(filename):
       
           # remove_html_tags = BeautifulSoup(filename, 'lxml').text
           # replace_non_breaking_space = remove_html_tags.replace('\xa0', ' ')
@@ -30,7 +31,8 @@ Bước 3 :
        Nếu không thì dữ nguyên code chạy bình thường 
        
 Bước 3 :
-       Xác định vị trí lưu file kết quả 
+       Xác định vị trí lưu file kết quả :
+       
               df_chidinh.drop_duplicates().to_excel('D:/FRT/5.Python/Template_boc_text/ketqua_vs_v3.xlsx', index=False)
               Để đường dẫn muốn lưu file
 
