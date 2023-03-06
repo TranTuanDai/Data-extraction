@@ -30,7 +30,7 @@ Bước 3 :
           
        Nếu không thì dữ nguyên code chạy bình thường 
        
-Bước 3 :
+Bước 4 :
        Xác định vị trí lưu file kết quả :
        
               df_chidinh.drop_duplicates().to_excel('D:/FRT/5.Python/Template_boc_text/ketqua_vs_v3.xlsx', index=False)
