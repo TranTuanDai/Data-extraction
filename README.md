@@ -21,7 +21,7 @@ Bước 2 :
        df_disease = pd.read_excel('D:/FRT/5.Python/tac_dung_phu/Frequent_less_rare/Side_Effect.xlsx')
        
 Bước 3 :
-      Nếu dữ liệu mô tả tác dụng phụ  có các thẻ dư html thì comment đoạn code này ở Funtion :
+      Nếu dữ liệu mô tả tác dụng phụ  có các thẻ dư html thì bỏ comment đoạn code này ở Funtion :
            def html_to_text_clean(filename):
       
           # remove_html_tags = BeautifulSoup(filename, 'lxml').text
