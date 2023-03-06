@@ -16,6 +16,23 @@ Bước 1 :
 
 Bước 2 : 
       Bỏ đường dẫn 2 file vừa down về vào 2 data frame tương ứng dưới đây :
+    
+       df_chidinh = pd.read_excel('D:/FRT/5.Python/tac_dung_phu/Frequent_less_rare/Frequent_less_rarely.xlsx')
+       df_disease = pd.read_excel('D:/FRT/5.Python/tac_dung_phu/Frequent_less_rare/Side_Effect.xlsx')
+       
+Bước 3 :
+      Nếu dữ liệu mô tả tác dụng phụ  có các thẻ dư html thì comment đoạn code này ở Funtion : def html_to_text_clean(filename):
+      
+          # remove_html_tags = BeautifulSoup(filename, 'lxml').text
+          # replace_non_breaking_space = remove_html_tags.replace('\xa0', ' ')
+          # remove_consecutive_space = new_trim_text(replace_non_breaking_space)
+          
+       Nếu không thì dữ nguyên code chạy bình thường 
+       
+Bước 3 :
+       Xác định vị trí lưu file kết quả 
+              df_chidinh.drop_duplicates().to_excel('D:/FRT/5.Python/Template_boc_text/ketqua_vs_v3.xlsx', index=False)
+              Để đường dẫn muốn lưu file
 
-    ![image](https://user-images.githubusercontent.com/127071070/223014395-ad4ede56-b4eb-489e-80e7-61ed32727e10.png)
+    
 
